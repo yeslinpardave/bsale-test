@@ -30,7 +30,7 @@ buttonCarrito.addEventListener('click',event=>{
 
 function actualizarCarritoUI(){
     fetch('https://bsale-prueba.herokuapp.com/api/carrito/api-carrito.php?action=mostrar')
-    .then(response =>{return response.json();})
+    .then(response =>response.json())
     .then(data =>{
         console.log(data);
         let tablaCont = document.querySelector('#tabla');
