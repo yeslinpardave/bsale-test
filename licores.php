@@ -29,7 +29,7 @@
         <section class="product section">
            <?php
 
-           $response = json_decode(file_get_contents('http://localhost/EjercicioDesarrollado/api/productos/api-productos.php?category=1'),true);
+           $response = json_decode(file_get_contents('https://bsale-prueba.herokuapp.com/api/productos/api-productos.php?category=1'),true);
 
            if($response['statuscode']== 200){
                foreach($response['items'] as $item){

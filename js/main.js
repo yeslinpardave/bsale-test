@@ -29,7 +29,7 @@ buttonCarrito.addEventListener('click',event=>{
 });
 
 function actualizarCarritoUI(){
-    fetch('http://localhost/EjercicioDesarrollado/api/carrito/api-carrito.php?action=mostrar')
+    fetch('https://bsale-prueba.herokuapp.com/api/carrito/api-carrito.php?action=mostrar')
     .then(response =>{return response.json();})
     .then(data =>{
         console.log(data);
@@ -76,7 +76,7 @@ botones.forEach(boton => {
 });
 
 const addItemToCarrito = id =>{
-    fetch('http://localhost/EjercicioDesarrollado/api/carrito/api-carrito.php?action=add&id=' + id)
+    fetch('https://bsale-prueba.herokuapp.com/api/carrito/api-carrito.php?action=add&id=' + id)
     .then(response =>{
         return response.text();
     })
@@ -86,7 +86,7 @@ const addItemToCarrito = id =>{
 };
 
 const removeItemFromCarrito = id =>{
-    fetch('http://localhost/EjercicioDesarrollado/api/carrito/api-carrito.php?action=remove&id=' + id)
+    fetch('https://bsale-prueba.herokuapp.com/api/carrito/api-carrito.php?action=remove&id=' + id)
     .then(res =>{
         return res.json();
     })
