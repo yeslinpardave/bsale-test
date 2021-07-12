@@ -13,7 +13,7 @@ class Productos extends DB{
      /*==========obtenemos los productos por categoria===========*/
 
     public function getItemByAll(){
-        $query = $this->connect()->query('SELECT * FROM bsale_test.product ');
+        $query = $this->connect()->query('SELECT * FROM yeslin_bsale_test.product ');
         $query->execute([]);
         
         $items =[];
