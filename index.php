@@ -43,7 +43,7 @@
             } /*============================ si se hace una busqueda entonces ===================*/
         }else if(isset($_GET['busqueda'])){
 
-            $response = json_decode(file_get_contents('http://localhost/EjercicioDesarrollado/api/productos/api-productos.php?busqueda=' . $_GET['busqueda']),true);
+            $response = json_decode(file_get_contents('https://bsale-prueba.herokuapp.com/api/productos/api-productos.php?busqueda=' . $_GET['busqueda']),true);
 
            if($response['statuscode']== 200){
                foreach($response['items'] as $item){
