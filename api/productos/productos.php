@@ -12,7 +12,7 @@ class Productos extends DB{
 
      public function getId($ids){
         
-        $query = $this->connect()->prepare('SELECT * FROM bsale_test.product WHERE product.id_product = :id');
+        $query = $this->connect()->prepare('SELECT * FROM yeslin_bsale_test.product WHERE product.id_product = :id');
         $query->execute(['id'=>$ids]);
 
         $row = $query->fetch();
@@ -32,7 +32,7 @@ class Productos extends DB{
 
     public function get($id){
         
-        $query = $this->connect()->prepare("SELECT * FROM bsale_test.product WHERE product.name LIKE :id ");
+        $query = $this->connect()->prepare("SELECT * FROM yeslin_bsale_test.product WHERE product.name LIKE :id ");
         $query->execute(['id'=>$id]);
 
         $items =[];
@@ -57,7 +57,7 @@ class Productos extends DB{
      /*==========obtenemos los productos por categoria===========*/
 
     public function getItemByCategory($category){
-        $query = $this->connect()->prepare('SELECT * FROM bsale_test.product WHERE product.category=:cat');
+        $query = $this->connect()->prepare('SELECT * FROM yeslin_bsale_test.product WHERE product.category=:cat');
         $query->execute(['cat'=>$category]);
         
         $items =[];
@@ -82,7 +82,7 @@ class Productos extends DB{
     /*==========obtenemos todos los productos ===========*/
 
     public function getItemByAll($sql){
-        $query = $this->connect()->query('SELECT * FROM bsale_test.product ');
+        $query = $this->connect()->query('SELECT * FROM yeslin_bsale_test.product ');
         $query->execute([]);
         
         $items=[];
