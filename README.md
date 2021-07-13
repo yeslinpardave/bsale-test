@@ -5,6 +5,7 @@ BsaleTest es una tienda onlin basado en html, css,javascript,php y la base de da
 ## Mirada de la pagina
 
 Puede visitarla aqui: https://bsale-prueba.herokuapp.com/
+
 ![github-small](https://scontent.flim10-1.fna.fbcdn.net/v/t1.6435-9/217406201_4242962632417078_8806575453461037653_n.png?_nc_cat=104&ccb=1-3&_nc_sid=730e14&_nc_eui2=AeEO0lMQqfjZcnFg9tEgRxihNggLQuUxy-Y2CAtC5THL5sliKpAl0QEHkg06S_hgmJW7ucz0DxEYx9X1kIbqV9D2&_nc_ohc=znHgK5QH68oAX_ecEZp&_nc_ht=scontent.flim10-1.fna&oh=47f77809bf0b6420458deba0a0ab898c&oe=60F194C5)
 
 ## Documentación
